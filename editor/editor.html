@@ -1,1 +1,38 @@
-
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GREATEST EDITOR — Editor</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <div data-inject="navbar"></div>
+  <div class="container content">
+    <div data-inject="sidebar" data-sidebar="editor"></div>
+    <main class="main-panel">
+      <h2>Editor</h2>
+      <div class="card">
+        <!-- Core editor UI should be included here (you can copy/paste the single-file editor preview) -->
+        <div class="row"><div class="small">Timeline • Preview • Tools</div></div>
+        <div style="height:16px"></div>
+        <div style="display:flex;gap:12px">
+          <div style="flex:1">
+            <div class="card">Preview area (use /assets/shaders/chroma.frag for chroma canvas)</div>
+            <div style="height:12px"></div>
+            <div class="card">Timeline & tracks (drag and drop clips here)</div>
+          </div>
+          <div style="width:320px">
+            <div class="card">Inspector & Effects</div>
+            <div style="height:12px"></div>
+            <div class="card">Export quick actions</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/js/navbar.js"></script>
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/storage.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
