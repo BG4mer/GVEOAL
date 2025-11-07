@@ -1,1 +1,28 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chroma Key Studio</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <div data-inject="navbar"></div>
+  <div class="container content">
+    <div data-inject="sidebar" data-sidebar="editor"></div>
+    <main class="main-panel">
+      <h2>Chroma Key Studio</h2>
+      <div class="card">
+        <div class="small">Upload footage and tune key color, similarity, smoothness, spill suppression and edge feathering.</div>
+        <div style="height:12px"></div>
+        <input type="file" id="chromaInput" accept="video/*" />
+        <div style="height:12px"></div>
+        <div id="chromaPreview" class="card">Chroma preview canvas (WebGL shader)</div>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/js/navbar.js"></script>
+  <script src="/assets/js/sidebar.js"></script>
+  <script src="/assets/js/storage.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
